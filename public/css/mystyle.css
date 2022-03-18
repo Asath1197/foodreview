@@ -1,0 +1,111 @@
+.mystyle{
+	height: 160px;
+	width: 254px;
+	color: white;
+	font-size: smaller;
+}
+.flip-container{
+    
+	perspective: 1000px;
+}
+.flip-container:hover .flipper,
+.flip-container.hover .flipper{
+	transform: rotateY(180deg);
+}
+.flip-container,
+.front,
+.back{
+	height: 200px;
+	width: 254px;
+}
+.flipper{
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.front,
+.back{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front{
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.back{
+    transform: rotateY(180deg);
+}
+footer{
+    background: #aaa;
+    color: white;
+}
+.edit{
+    float: right;
+    padding-right: 10px;
+}
+tr.break td {
+    height: 10px;
+  }
+  button:focus {
+    outline: 0;
+}
+
+.navbar .dropdown-menu .form-control {
+    width: 200px;
+}
+div.dropdown-row>a.dropdown-item{
+    display:inline-block;
+    width: 32%;
+  }
+  .carousel-inner img {
+    width: 65%;
+    height: 65%;
+}
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+.carousel-control-prev-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: black;
+}
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: black;
+}
+.center-round{
+    display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+
+    border-radius: 50%;
+}
+.bd {
+    text-decoration: underline ;
+  }
+  
+    
+  
+  .img-round {
+    border-radius: 50%;
+  }
+  .search-item{
+      widows: 100%;
+      height: 35px;
+  }
+

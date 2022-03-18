@@ -1,0 +1,21 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title>Login Success!</title>
+        <script>
+            function welcome(){
+                var urlParams = new URLSearchParams(window.location.search);
+                var userid = urlParams.getAll('userid');
+                console.log(userid);
+                
+                document.getElementById('welcome').textContent="Welcome" + userid + "!"
+            }
+        </script>
+
+
+    </head>
+
+    <body onload = "welcome()">
+        <div id="welcome"></div>
+    </body>
+</html>
